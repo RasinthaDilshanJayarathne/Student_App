@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="subjectFormContext" prefHeight="522.0" prefWidth="717.0" style="-fx-background-color: #ffc7e3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubjectFormController">
+   <children>
+      <Label layoutX="117.0" layoutY="15.0" text="Subjects" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="207.0" layoutY="25.0" prefHeight="19.0" prefWidth="425.0" />
+      <TableView accessibleRole="IMAGE_VIEW" layoutX="22.0" layoutY="161.0" prefHeight="344.0" prefWidth="675.0">
+        <columns>
+          <TableColumn prefWidth="130.0" text="Maths" />
+          <TableColumn prefWidth="129.0" text="Science" />
+            <TableColumn prefWidth="139.0" text="English" />
+            <TableColumn prefWidth="131.0" text="Sinhala" />
+            <TableColumn prefWidth="144.0" text="History" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="7.0" onAction="#backToHomeOnAction" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #000080;" text="Home" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
